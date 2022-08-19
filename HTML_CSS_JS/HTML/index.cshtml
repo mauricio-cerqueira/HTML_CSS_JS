@@ -1,0 +1,45 @@
+﻿@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/CSS/style.css">
+    
+
+
+    <title>Meu primeiro JavaScript</title>
+    <title></title>
+</head>
+<body onselectstart="return false" oncontextmenu="return false">
+    <div>
+        <h2>Bem vindo ao nosso Site!!</h2>
+        <p id="data"></p>
+    </div>
+
+
+    <div id="area">
+        <form id="formulario" autocomplete="off" onclick="FuncaoFormulario()" action="~/HTML/index.cshtml">
+            <fieldset>
+                <legend>Formulário</legend>
+                <label>Nome:</label><input id="nomeId" class="campo_nome" type="text" placeholder="Digite seu nome" required maxlength="12"><br>
+                <label>Senha:</label><input id="senhaId" class="campo_senha" type="password" required minlength="4"><br>
+                <label>Email:</label><input id="emailId" type="email" class="campo_email" placeholder="Digite seu e-mail" required><br><br>
+                <label>Mensagem:</label><br><textarea id="msgId" class="msg" cols="35" rows="8" placeholder="Digite sua mensagem"></textarea><br>
+                <input class="btn_submit" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="areaJS" onclick="FuncaoAviso()">
+        <p id="confirmacao">Preencha o formuário para realizar seu cadastro!</p>
+    </div>
+
+    <!--Relacionar o arquivo de scripts JavaScript-->
+    <script src="~/JavaScript/JavaScript.js"></script>
+    <!--Foi colocado no final do arquivo para tornar a exibição da página mais rápida-->
+</body>
+</html>
